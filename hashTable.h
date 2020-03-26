@@ -6,21 +6,24 @@
 #include <string.h>
 #include <ctype.h>
 
-#define MAX_BUCKETS 
-#define MAX_STRING
+#define MAX_BUCKETS 369419
+#define MAX_STRING 100
 
-struct node{
+struct node {
     struct Node* next;
     char *key;
 };
 
-
-typedef struct HashTable{
+typedef struct HashTable {
     struct Node* buckets[MAX_BUCKETS];
     int numElements[MAX_BUCKETS];
-}HashTable;
+} HashTable;
 
-extern 
+extern HashTable* createHashTable();
+extern unsigned Hash(char* key);
+extern void Insert(HashTable *h, char *key);
+extern bool Search(HashTable *h, char *key);
+extern void RemovePunctAndMakeLowerCase(char *key);
 
 
 #endif // !HASHTABLE_H

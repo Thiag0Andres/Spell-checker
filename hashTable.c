@@ -12,7 +12,7 @@ unsigned Hash(char *key) {
 };
 
 //creating hashtable
-HashTable* CreateHashTable() {
+HashTable* CreateHashTable() { 
     HashTable *h = (HashTable*) malloc(sizeof(HashTable)); //allocating hashtable in the memory
 
     for(int i=0; i < MAX_BUCKETS; i++){
@@ -101,3 +101,30 @@ void RemovePunctAndMakeLowerCase(char *key) {
 
     *dst = 0;
 }
+
+/*
+void printAll(HashTable *hashtable){                  //an experimental function to see how many elements are in each bucket
+    int empty=0,full=0,bucket1=0,bucket2=0,bucket3=0,bucket4=0,bucket5=0,bucket6=0,bucketmaior=0;
+    for (int i = 0; i<MAX_BUCKETS;i++){
+        if(hashtable->numElements[i]==1){
+            bucket1++;
+        }else if (hashtable->numElements[i]==2){
+            bucket2++;
+        }else if(hashtable->numElements[i]==3){
+            bucket3++;
+        }else if (hashtable->numElements[i]==4){
+            bucket4++;
+        }else if(hashtable->numElements[i]==5){
+            bucket5++;
+        }else if (hashtable->numElements[i]==6){
+            bucket6++;
+        }else if(hashtable->numElements[i]>6){
+            bucketmaior++;
+        }
+        
+        //printf("Bucket: [%d], Numero de elementos: %d\n",i,hashtable->numElements[i]);
+    }
+    printf("Buckets com 1: %d\nBuckets com 2: %d\nBuckets com 3: %d\nBuckets com 4:%d\nBuckets com 5 :%d\nBuckets com 6:%d\nBuckets com mais de 6:%d\n",bucket1,bucket2,bucket3,bucket4,bucket5,bucket6,bucketmaior);
+    //printf("Buckets vazios:%d Buckets preenchidos:%d\n", empty,full);
+}
+*/

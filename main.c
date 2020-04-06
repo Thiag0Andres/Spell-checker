@@ -3,7 +3,7 @@
 
 int main() {
     //opening the input, output and the dictionary text files
-    FILE *input = fopen("Texto bases/Harry_Potter_and_the_Order_of_Phoenix.txt", "r");
+    FILE *input = fopen("Texto bases/Brazilian_federal_constitution_1988.txt", "r");
     FILE *output = fopen("relatorio.txt", "w");
     FILE *dictionary = fopen("ascii_noaccent_noduplicates_FIXED_v2.txt","r");
     

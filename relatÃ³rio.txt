@@ -1,3 +1,0 @@
-Numero total de palavras do texto: 0.
-Numero total de palavras que falharam no spell check: 0.
-Tempo total da verificacao: 0.00 ms.

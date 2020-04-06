@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-#define MAX_BUCKETS 369419
+#define MAX_BUCKETS 369169
 #define MAX_STRING 100
 
 int numColisoes;
